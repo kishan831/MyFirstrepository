@@ -1,11 +1,5 @@
 # Multiplayer-FPS
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Template from jarvis](https://img.shields.io/badge/Hi-Jarvis-ff69b4.svg)](https://github.com/Armour/Jarvis)
-
-A multiplayer first-person shooter game based on Unity3D. Different types of input devices are supported, including Kinect, Xbox controllers, Leap motion, and VR Glasses. (Each contained in a different branch, *UPDATE: those are not maintained since 2020, use at your own risk*)
-
 ## Requirement
 
 [Unity 2020.3.4f1 (LTS)](https://unity.cn/release-notes/lts/2020/2020.3.4f1)
@@ -66,22 +60,6 @@ A multiplayer first-person shooter game based on Unity3D. Different types of inp
   * **Shooting animation are added** by setting keyframes in unity3d animation panel
   ![img](Images/12.jpg)
 
-* Networking
-  * This game uses **Photon Unity Networking 2**, which is a good network model from Unity Assets Store
-
-* Bullet effects
-  * Bullets hitting different materials will cause different effects
-    * Wood
-    <img src="Images/13.jpg" style="width:510px"></img>
-    * Ground
-    <img src="Images/14.jpg" style="width:510px"></img>
-    * Metal
-    <img src="Images/15.jpg" style="width:510px"></img>
-    * Concrete
-    <img src="Images/16.jpg" style="width:510px"></img>
-    * Water
-    <img src="Images/17.jpg" style="width:510px"></img>
-
 * Door animation
   * Doors will automatically open when there is someone nearby and close when no one is around
   * Before opening
@@ -117,19 +95,6 @@ A multiplayer first-person shooter game based on Unity3D. Different types of inp
 * Mouse and keyboard
   * The traditional way
   * Cheap and easy to use
-* Kinect
-  * See below for details
-  * *This part was implemented by my friend [Ruochen Jiang](https://github.com/VHUCXAONG), many thanks to him!*
-* Xbox Controller
-  * Like the combination of mouse and keyboard
-  * Most Xbox games use this way to play
-* Leap Motion
-  * User hand gesture to control game
-  * A more advanced interaction that might become popular in the future
-* VR glasses
-  * More vivid and closer to reality
-  * Recently very popular but devices are most likely expensive
-  * Players cannot move now due to the limitation of my device
 
 ### Kinect Details
 
