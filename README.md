@@ -25,7 +25,6 @@
     * **Policeman**: a policeman-like model with yellow skin
     * **RobotX**: a robot-like model with dark pink skin
     * **RobotY**: a robot-like model with dark blue skin
-    * <img src="Images/9.jpg" height="200px"></img> <img src="Images/11.jpg" height="200px"></img> <img src="Images/10.jpg" height="200px"></img>
 
   * **Animations**:
     * **Walk** towards four different directions
@@ -33,15 +32,10 @@
     * **Jump** without affecting upper part body (**achieved by unity3d body mask**)
     * **Shoot** without affecting lower part body (**achieved by unity3d body mask**)
     * **Unity Blend Tree**
-      * This makes the player walk or run more naturally. It uses interpolation function to map different combinations of user input to different animations.
-      * ![img](Images/4.jpg)
-
+      * This makes the player walk or run more naturally. It uses interpolation function to map different combinations of user input to different animation
+        
   * **State Machine**
     * There are multiple layers in the player state machine.
-    * <img src="Images/5.jpg" style="width:420px"></img>
-    * <img src="Images/6.jpg" style="width:420px"></img>
-    * <img src="Images/7.jpg" style="width:420px"></img>
-    * <img src="Images/8.jpg" style="width:420px"></img>
 
 * Player movement
   * Walking && Running && Aiming
@@ -58,14 +52,10 @@
 * Gun model
   * The original gun model (AK-47) was from Unity Assets Store
   * **Shooting animation are added** by setting keyframes in unity3d animation panel
-  ![img](Images/12.jpg)
+
 
 * Door animation
-  * Doors will automatically open when there is someone nearby and close when no one is around
-  * Before opening
-  <img src="Images/18.jpg" style="width:550px"></img>
-  * After opening
-  <img src="Images/19.jpg" style="width:550px"></img>
+  * Doors will automatically open when there is someone nearby and close when no one is around.
 
 ## Script files
 
@@ -95,36 +85,3 @@
 * Mouse and keyboard
   * The traditional way
   * Cheap and easy to use
-
-### Kinect Details
-
-* Tools and Platform:
-  * Kinect for Xbox One
-  * Kinect for Windows SDK
-  * Unity
-  * Visual Studio
-
-* Recognition Method:
-  * Use Kinect for Windows SKD (BodySourceManager) to get the positions of the player's skeleton. Determine the actions of moving, jumping, shooting based on these positions and regard rotation as an input of the game.
-
-* **Shooting**：
-  * Users can trigger shooting by lifting their right arms. The game calculates the distance between the user's right hand and right shoulder based on skeleton nodes. Shooting will be triggered if the calculated distance reaches a threshold.
-
-* **Moving**:
-  * Move in the game by stepping forward, backward, leftward, and rightward. The game recognizes moving actions by the offset of right foot’s skeleton node on x-z plane. A movement will be triggered if the offset reaches a threshold.
-
-* **Jumping**:
-  * Users can jump in the game. The game calculates offset of right foot’s skeleton node on the z-axis to register a jumping action. Jumping will be triggered if the calculated offset reaches a threshold.
-
-* **View Rotation**:
-  * Use your right hand as a virtual mouse to control the camera rotation. The game records the initial position of the left hand as the initial position of the mouse, then calculates the camera rotation by the left hand’s offset.
-
-* <img src="Images/skeleton_overview.png" style="width:110px"> </img><img src="Images/shooting.png" style="width:134px"></img> <img src="Images/jumping.png" style="width:122px"> </img><img src="Images/rotation.png" style="width:156px"></img>
-
-## Contribution
-
-See [CONTRIBUTING.md](https://github.com/Armour/Multiplayer-FPS/blob/master/.github/CONTRIBUTING.md)
-
-## License
-
-[MIT License](https://github.com/Armour/Multiplayer-FPS/blob/master/LICENSE)
